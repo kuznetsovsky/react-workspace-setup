@@ -1,5 +1,5 @@
 # NodeJS Modules
 node_modules/
 
-# Build folder
-build/
+# Scripts build
+index.bundle*
