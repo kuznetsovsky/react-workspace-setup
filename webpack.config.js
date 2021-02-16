@@ -8,6 +8,15 @@ const config = {
     path: path.resolve(__dirname, './build'),
     filename: '[name].bundle.js'
   },
+  module: {
+    rules: [
+      {
+        test: /\.(js|ts)x?$/,
+        exclude: /node_modules/,
+        loader: 'babel-loader',
+      },
+    ],
+  },
 };
 
 module.exports = (env, argv) => {
