@@ -9,6 +9,7 @@ module.exports = (api) => {
   // Presets
   const presets = [
     '@babel/preset-env',
+    '@babel/preset-react',
   ];
 
   return {
