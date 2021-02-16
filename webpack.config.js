@@ -2,11 +2,16 @@ const path = require('path');
 
 const config = {
   entry: {
-    index: path.resolve(__dirname, './src/index.js')
+    index: path.resolve(__dirname, './src/index.js'),
   },
   output: {
-    path: path.resolve(__dirname, './build'),
+    path: path.resolve(__dirname, './public'),
     filename: '[name].bundle.js'
+  },
+  devServer: {
+    contentBase: path.join(__dirname, 'public'),
+    compress: true,
+    port: 1337,
   },
   module: {
     rules: [
