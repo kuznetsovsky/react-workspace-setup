@@ -20,5 +20,6 @@ const config = {
 };
 
 module.exports = (env, argv) => {
+  config.devtool = (argv.mode === 'production') ? false : 'eval-cheap-module-source-map';
   return config;
 };
